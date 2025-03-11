@@ -1,1 +1,1 @@
-Repo for projects creating while learning and having fun with python!
+Repo for projects created while learning and having fun with python!
