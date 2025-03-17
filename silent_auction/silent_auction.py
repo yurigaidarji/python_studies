@@ -5,6 +5,16 @@
 
 import art
 
+def get_highest_bid (bids_dictionary):
+
+    highest_bid = 0.0
+    for bidder in bids_dictionary:
+        bid = bids_dictionary[bidder]
+        if bid > highest_bid:
+            highest_bid = bid
+            winner = bidder
+    return winner
+
 print(art.logo)
 
 new_users = True
@@ -20,14 +30,6 @@ while new_users:
 
 print(bids)
 
-def get_highest_bid (bids_dictionary):
 
-    highest_bid = 0.0
-    for bidder in bids_dictionary:
-        bid = bids_dictionary[bidder]
-        if bid > highest_bid:
-            highest_bid = bid
-            winner = bidder
-    return winner
 
 print(get_highest_bid(bids))
